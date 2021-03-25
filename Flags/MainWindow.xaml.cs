@@ -24,5 +24,28 @@ namespace Flags
         {
             InitializeComponent();
         }
+
+        private void Apaknapp_Click(object sender, RoutedEventArgs e)
+        {
+            if(Apatext.Text == "Apa")
+            {
+                Apatext.Text = "Oni-Chan";
+                Apaknapp.Content = "Apa";
+            }
+            else if (Apatext.Text == "Oni-Chan")
+            {
+                var newButton = new Button();
+                newButton.Content = "Ny Knapp";
+                newButton.Width = 75;
+                newButton.Height = 30;
+                MainGrid.Children.Add(newButton);
+
+            }
+            else
+            {
+                Apatext.Text = "Apa";
+                Apaknapp.Content = "Oni-Chan";
+            }
+        }
     }
 }

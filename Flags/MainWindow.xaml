@@ -5,8 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Flags"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Flaggor" Height="450" Width="800">
+    <Grid Name="MainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
 
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="Apatext" Height="30" Width="75" Text="Apa"/>
+        <Button Content="Click Me"  Name="Apaknapp" Height="30" Width="75" Click="Apaknapp_Click" Grid.Row="1"/>
     </Grid>
 </Window>
